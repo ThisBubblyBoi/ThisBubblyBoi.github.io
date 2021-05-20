@@ -1,1 +1,52 @@
-"Hello World" 
+<!DOCTYPE html> <html lang = "en">
+
+<head>
+
+    <!------------------------------------------------>
+    <title> 𝐖𝐡𝐢𝐭𝐞 𝐏𝐨𝐢𝐧𝐭                     </title>
+    <!------------------------------------------------>
+    <link rel      = "icon"
+          type     = "image/png"
+          href     = "https://img.pngio.com/white-circle-png-free-download-white-circle-png-1890_1890.png">
+    <!------------------------------------------------>
+    <script src    = "p5.js">               </script>
+    <script src    = "p5.sound.min.js">     </script>
+    <script src    = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <!------------------------------------------------>
+
+    <!------------------------------------------------>
+    <link rel      = "stylesheet"
+          type     = "text/css"
+          href     = "styles.css">
+    <!------------------------------------------------>
+    <meta charset  = "utf-8">
+    <!------------------------------------------------>
+
+</head>
+
+<body>
+
+<label class = "switch" id = "switch">
+  <input onchange = "changeMode()" type = "checkbox" checked>
+  <span class = "slider round"> </span>
+</label>
+
+<!------------------------------------------------>
+<script src      =  "game.scorekeep.js">   </script>
+<script src      =     "game.engine.js">   </script>
+<script src      =     "game.player.js">   </script>
+<script src      =        "game.orb.js">   </script>
+<script src      =     "game.poison.js">   </script>
+<script src      =      "game.world.js">   </script>
+<!------------------------------------------------>
+<link rel        = "preconnect" href = "https://fonts.gstatic.com">
+<link href       = "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel = "stylesheet">
+<!------------------------------------------------>
+<message class = "message1" id = "message"> Press "Z" to save your score... </message> <br>
+<message class = "message2" id = "highscore"> Your high score: --           </message> <br>
+<credits class = "credits"> Made by Aryan Gupta                             </credits>
+<!------------------------------------------------>
+
+</body>
+
+</html>
