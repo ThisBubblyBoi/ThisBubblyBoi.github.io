@@ -8,8 +8,9 @@ const number_of_poisons = 5; // Creates less than this amount (because for loop 
 
 let poisons = [], poison_cords_X = [], poison_cords_Y = [];
 
-const ui_text = "Welcome to White Point. In this 2D platformer game, use the 'W', 'A', and 'D' keys to move the player \naround. " +
-                      "Attempt to collect as many orbs \n(white circles) as possible, while avoiding poisons \n(red circles). Good luck! ";
+const ui_text = "Welcome to White Point. In this 2D platformer game, use the UP, LEFT, and RIGHT Arrow keys keys to move \nthe player around. " +
+                      "Attempt to collect as many orbs \n(white circles) as possible, while avoiding poisons \n(red circles). Good luck! " +
+                      "\n\nNote: Press the 'Z' key to save your current score";
 
 let main1 = "#ffdb15";
 let main2 = "#141414";
@@ -38,7 +39,6 @@ function changeMode() {
   console.log("Using " + new_theme + " mode.")
 
 }
-
 
 function preload() {
 
