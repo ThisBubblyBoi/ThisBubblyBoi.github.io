@@ -1,0 +1,75 @@
+/* Declare some variables for CSS */
+:root {
+
+    /* Website fonts */
+
+    /*    Titles     */ --poppins:         "Poppins",         sans-serif;
+    /*  Normal text  */ --source-sans-pro: "Source Sans Pro", sans-serif;
+
+    /* Colors */
+
+    /* A nice, warm(ish) yellow |   Turbo Yellow   */
+    --yellow: 255, 225, 0;
+
+    /* A deep, near-black grey  |     Cod Grey     */
+    --grey: 23, 23, 23;
+
+    /* A dark, sharp violet     |  Electric Violet */
+    --violet: 170, 0, 200;
+
+    /* A deep, pinkish red      |     Monza Red    */
+    --red: 189, 0, 57;
+
+}
+
+/* Basic text setup */
+.text {
+
+    /* Don't have the text all the way to the left */
+    margin: 40px;
+
+    /* Set a good font */
+    font-family: var(--source-sans-pro);
+
+}
+
+/* Opening divider */
+.opener {
+
+    /* Align it properly */
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+
+    /* Gradient background, slightly darkened */
+    background-image: linear-gradient(140deg, rgba(var(--red), 0.9), rgba(var(--violet), 0.9));
+
+    /* Make sue to cover the whole page */
+    background-size: cover;
+
+    /* Set a background color */
+    background-color: var(--grey);
+
+    /* Make text in this divider white -- contrasts nicely with background */
+    color: white;
+
+}
+
+/* Headings & titles */
+.heading {
+
+    /*  Align heading to center */
+    text-align: center;
+
+    /* Set a good font */
+    font-family: var(--poppins);
+
+    /* Make it BIG! */
+    font-size: 550%;
+
+    /* Make sure it's not too light */
+    opacity: 100%;
+
+}
