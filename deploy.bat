@@ -2,7 +2,7 @@
 
 echo Deploying site to GitHub!
 
-echo Repository link: https://github.com/ThisBubblyBoi/thisbubblyboi.github.io.git
+echo Repository link: https://github.com/thisbubblyboi/thisbubblyboi.github.io
 
 git Pushing to repository...
 
@@ -12,7 +12,7 @@ git add
 
 git commit -m "Edited site, deployed changes"
 
-git remote add origin https://github.com/ThisBubblyBoi/thisbubblyboi.github.io.git
+git remote add origin https://github.com/thisbubblyboi/thisbubblyboi.github.io
 
 git remote -v
 
