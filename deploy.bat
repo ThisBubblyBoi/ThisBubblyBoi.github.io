@@ -4,9 +4,25 @@ echo Deploying site to GitHub!
 
 echo Repository link: https://github.com/ThisBubblyBoi/thisbubblyboi.github.io.git
 
+git Pushing to repository...
+
+git init -b main
+
+git add 
+
+git commit -m "Edited site, deployed changes"
+
+git remote add origin https://github.com/ThisBubblyBoi/thisbubblyboi.github.io.git
+
+git remote -v
+
+git push origin main
+
+echo Repository updated, deploying to Github pages...
+
 git add --all
 
-git commit -m Edited site, deployed changes"
+git commit -m "Edited site, deployed changes"
 
 git push -u origin main
 
