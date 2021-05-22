@@ -4,7 +4,13 @@
 
 <head>
 
-    <title> Bubbly's Website! </title>
+<!------------------------------------------------------------------------------------------------------>
+
+    <!-- Website title -->
+    <title> Website! </title>
+
+
+<!------------------------------------------------------------------------------------------------------>
 
     <!-- All imports here -->
 
@@ -20,17 +26,58 @@
             href = "styles.css" 
             media = "screen"/>
 
+    <!-- JavaScript Code -->
+    <script type = "text/javascript"
+            src = "nav.js"> </script>
+
+<!------------------------------------------------------------------------------------------------------>
+
     <!-- Encoding -->
     <meta charset  = "utf-8">
 
 </head>
 
+<!-- All the text -->
 <body>
 
-    <div class = "opener">
+    <nav class = "nav-bar" 
+            id = "nav-bar">
 
-        <h1 class = "heading"> Welcome to Bubbly's Site </h1>
-        <text class = "text"> Sheeeesshh </text>
+        <a href = #home 
+            class = "active"
+            id = "home"
+            onclick = "select(this, 'home')"> Home         </a>
+
+        <a href = #projects
+            class = "nonactive"
+            id = "projects"
+            onclick = "select(this, 'projects')"> Projects </a>
+
+        <a href = #about-me
+            class = "nonactive"
+            id = "about-me"
+            onclick = "select(this, 'about-me')"> About Me </a>
+
+        <a href = #media
+            class = "nonactive"
+            id = "media"
+            onclick = "select(this, 'media')"> Media       </a>
+
+        <p class = "name"> Aryan Gupta </p>
+
+        <a href = "javascript:void(0);" 
+            class = "icon" 
+            onclick = "selection()"> <i class = "fa fa-bars"> </i> </a>
+
+    </nav>
+
+    <div class  = "opener">
+
+        <h1 class = "heading"> Site Title </h1>
+
+        <p class = "text"> Some text goes here... </p>
+
+        <p class = "text"> Some more text here... </p>
 
     </div>
 
