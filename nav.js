@@ -7,11 +7,11 @@ function select(item, x) {
   // Log which page the user will be forwarded to
   console.log("Going to the '" + x + "' page!");
 
-  // Unselect other items from "active" state, set to "nonactive"
+  // Unselect other items from "active" state, set to "inactive"
   var all = document.getElementsByTagName("a");
   for (let x = 0; x < all.length; x ++) {
 
-    if (all[x].className == "active") { all[x].className = "nonactive"; }
+    if (all[x].className == "active") { all[x].className = "inactive"; }
 
   }
 
