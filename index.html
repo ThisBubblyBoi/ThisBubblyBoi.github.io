@@ -6,8 +6,14 @@
 
 <!------------------------------------------------------------------------------------------------------>
 
-    <!-- Website title -->
+    <!-- Website tab stuff -->
+
+    <!-- Tab title -->
     <title> Website! </title>
+
+    <!-- My handmade icon! -->
+    <link rel = "icon" 
+            href = "assets/icon.png">
 
 
 <!------------------------------------------------------------------------------------------------------>
@@ -47,22 +53,27 @@
         <a href = #home 
             class = "active"
             id = "home"
-            onclick = "select(this, 'home')"> Home         </a>
-
-        <a href = #projects
-            class = "inactive"
-            id = "projects"
-            onclick = "select(this, 'projects')"> Projects </a>
+            onclick = "select(this, 'home')">      Home      </a>
 
         <a href = #about-me
             class = "inactive"
             id = "about-me"
-            onclick = "select(this, 'about-me')"> About Me </a>
+            onclick = "select(this, 'about-me')">  About Me  </a>
+
+        <a href = #projects
+            class = "inactive"
+            id = "projects"
+            onclick = "select(this, 'projects')">  Projects  </a>
 
         <a href = #media
             class = "inactive"
             id = "media"
-            onclick = "select(this, 'media')"> Media       </a>
+            onclick = "select(this, 'media')">     Media     </a>
+
+        <img id = "icon"
+            class = "nav-icon"
+            src = "assets/icon.png"
+            width = "60">
 
         <p class = "name"> Aryan Gupta </p>
 
@@ -74,13 +85,26 @@
 
     <div class  = "opener">
 
-        <h1 class = "heading title"> it's not done bro. </h1>
+        <h1 class = "heading"> it's not done bro. </h1>
 
-        <p class = "text"> it'll be done soon. hopefully. </p>
+        <p class = "center hidden text"
+            id = "subheading"> it'll be done soon. <i>hopefully</i>. </p>
 
     </div>
 
     <div class = "site-stuff">
+
+        <p class = "spaced big center white text"
+            id = "home_page_text"> some stuff'll go here ig </p>
+
+        <p class = "spaced white text"
+            id = "about-me-section"> about me section here </p>
+
+        <p class = "spaced white text"
+            id = "about-me-section"> projects section here </p>
+
+        <p class = "spaced white text"
+            id = "about-me-section"> media section here </p>
 
     </div>
 

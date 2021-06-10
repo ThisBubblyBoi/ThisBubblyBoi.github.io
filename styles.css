@@ -30,8 +30,6 @@
 
 html, body {
 
-    display: flex;
-    flex-direction: column;
     margin: 0;
     overflow-x: hidden;
 
@@ -40,7 +38,7 @@ html, body {
 /* Hidden scrollbar */
 ::-webkit-scrollbar { display: none; }
 
-/* Basic text setup */
+/* Basic text setups */
 p.text {
 
     /* Don't have the text all the way to the left */
@@ -50,20 +48,34 @@ p.text {
     font-family: var(--source-sans-pro);
 
     /*  Align text to center */
-    text-align: right;
-
-    /* Position text next to title */
-    position: relative;
-    right: 20vw;
-
-    animation: show_me 0s 5s forwards;
-    opacity: 0%;
+    text-align: center;
 
 }
 
-@keyframes show_me {
+p.big { font-size: 200%; }
 
-    to { opacity: 100%; }
+p.center { position: relative; right: 0vw; }
+
+p.white { color: white; }
+
+p.hidden {
+    
+    animation: 3s fade_in;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes fade_in {
+
+    0% { opacity: 0; }
+    100% { visibility: visible; opacity: 1; }
+
+}
+
+p.spaced {
+
+    padding-bottom: 10%;
 
 }
 
@@ -160,19 +172,16 @@ p.text {
     /* Make sure it's not too light */
     opacity: 100%;
 
-}
-
-.title {
-
+    /* Other stuff for animation */
     position: relative;
     top: 50%;  
     width: 8.9em;
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, .75);
-    text-align: center;
     white-space: nowrap;
     overflow: hidden;
     animation: typewriter 2s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(10) infinite normal;
+
 }
 
 @keyframes typewriter{
@@ -191,14 +200,15 @@ p.text {
 /* Naviigation bar background */
 .nav-bar {
 
-    background-color:  rgb(var(--grey));
-    overflow:                    hidden;
-    position:                     fixed;
-    z-index:                         10;
-    font-family:         var(--poppins);
-    border-radius:                 50px;
-    margin:                        20px;
-    width:                       97.5vw;
+    background-color:         rgba(var(--grey), 0.5);
+    overflow:                                 hidden;
+    position:                                  fixed;
+    z-index:                                      10;
+    font-family:                      var(--poppins);
+    border-radius:                              50px;
+    margin:                                     20px;
+    width:                                    97.5vw;
+    text-shadow:  2px 2px 5px rgb(var(--light-grey));
 
 }
 
@@ -216,6 +226,9 @@ p.text {
     top:              17px;
     right:            15px;
     border-radius:    50px;
+    overflow:       hidden;
+
+    text-shadow:  2px 2px 5px rgb(var(--light-grey));
 
 }
 
@@ -235,31 +248,42 @@ p.text {
 
 }
 
+
+#nav-bar .nav-icon {
+
+    display: block;
+    padding: 15px;
+    float: left;
+
+}
+
 #nav-bar .name {
 
     float:            left;
     display:         block;
     color:         white;
     text-align:     center;
-    padding:     15px 55px;
-    text-decoration:  none;
+    padding:          15px;
     font-size:        17px;
     font-style:     italic;
+    position:     absolute;
+    left:               4%;
 
 }
 
 /* Navigation bar hover stylization for buttons*/
 .nav-bar a:hover {
 
-    background-color:  rgb(var(--light-grey));
-    color:                            white;
+    background-color:   rgba(var(--light-grey), 0.3);
+    color:                                   white;
+    text-shadow:  1px 1px 8px rgb(var(--grey));
 
 }
 
 /* Currently selected buttons */
 .nav-bar a.active {
 
-    background-color:    rgb(var(--grey));
+    background-color:    rgb(var(--grey), 0.7);
     color:                        white;
     border:  3px solid rgb(var(--violet));
     position:                    relative;
@@ -340,8 +364,11 @@ p.text {
 
 /* NORMAL SITE STUFF */
 
+#subheading { right: 20vw; }
+
 .site-stuff {
 
     background: rgb(var(--grey));
+    flex-direction: column;
 
 }

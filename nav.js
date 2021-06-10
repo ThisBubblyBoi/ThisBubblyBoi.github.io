@@ -1,6 +1,6 @@
 // All the code for the top navigation bar can be found here!
 
-console.log("Navigation script is running...");
+console.log("Navigation bar script has been loaded...");
 
 function select(item, x) {
 

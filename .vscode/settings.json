@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    ".gitignore": true,
+    "deploy.bat": true,
+    "README.md": true,
+    "site-workspace.code-workspace": true,
+    ".vscode": true
+  }
+}
